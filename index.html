@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h3 class="h">ToDo <span class="span_of_list">List</span></h3>
+        <div class="main">
+            <input type="text" id="inputField" placeholder="Enter a task">
+            <button id="buttonOfAdd">Add</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Popup for task added -->
+    <div id="popup1" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Task added successfully!</p>
+        </div>
+    </div>
+
+    <!-- Popup for task deleted -->
+    <div id="popup2" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Task deleted successfully!</p>
+        </div>
+    </div>
+
+    <!-- Popup for editing a task -->
+    <div id="popup3" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <input type="text" id="editField" placeholder="Edit your task">
+            <button id="buttonOfEdit">Edit</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+</html>
